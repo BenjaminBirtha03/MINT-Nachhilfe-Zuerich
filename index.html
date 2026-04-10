@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINT Nachhilfe Zürich</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">MINT Nachhilfe Zürich</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav-center" id="navMenu">
+        <a href="#">Startseite</a>
+        <a href="#">Über uns</a>
+        <a href="#">Fächer</a>
+        <a href="#">Preise</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <div class="nav-right">
+        <a href="#" class="btn-primary">Kostenlose Lektion buchen</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-box">
+        <h1>Nachhilfe von ETH<br>Studierenden in Zürich</h1>
+        <p>
+            Mathe, Physik und Informatik für Gymnasium und Matura.
+            Zuverlässig, klar erklärt, 44 CHF pro Stunde.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn-blue">Erste Lektion buchen</a>
+            <a href="#" class="btn-light">Fächer ansehen</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- NEW AFTER HERO -->
+<section class="pricing">
+
+  <div class="pricing-top">
+
+    <div class="pricing-left">
+      <span class="tag">— Transparente Preise</span>
+      <h2>
+        Professionelle Nachhilfe<br>
+        zu fairen Preisen
+      </h2>
+    </div>
+
+    <div class="pricing-right">
+      <p>
+        44 CHF pro Stunde mit vergünstigter Probestunde.
+        Kein Verstecktes, keine langen Verträge.
+        Nur qualifizierte ETH Tutoren und echte Ergebnisse.
+      </p>
+
+      <div class="pricing-buttons">
+        <a href="#" class="btn-light">Kostenlose Probestunde buchen</a>
+        <a href="#" class="btn-outline">Alle Angebote ansehen</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-container">
+
+    <div class="stat">
+      <h3>44</h3>
+      <span>CHF pro Stunde</span>
+      <p>Faire Preise für professionelle Nachhilfe.</p>
+    </div>
+
+    <div class="stat">
+      <h3>1:1</h3>
+      <span>Individuelle Betreuung</span>
+      <p>Jede Stunde angepasst an dein Niveau.</p>
+    </div>
+
+    <div class="stat">
+      <h3>3</h3>
+      <span>Fächer verfügbar</span>
+      <p>Mathematik, Physik und Informatik.</p>
+    </div>
+
+    <div class="stat">
+      <h3>∞</h3>
+      <span>Keine Bindung</span>
+      <p>Flexible Termine ohne Verpflichtung.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+</script>
+</html>

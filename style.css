@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #DFE2E3;
+  color: #0f172a;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 24px 80px;*/
+  padding: 30px 20%;
+  /*background: #DFE2E3;*/
+  background: rgba(255, 255, 255, 0.4); /* 70% weiß */
+  backdrop-filter: blur(5px); /* optional, sieht modern aus */
+
+  border-bottom: 1px solid #e5e7eb;
+  position: absolute;/*sticky;*/
+  top: 0;
+  z-index: 1000;
+  width: 100%; /*why NEW ?????*/
+}
+
+.nav-center a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.nav-left {
+  font-weight: 600;
+  font-size: 24px; /* größerer Titel */
+}
+
+.btn-primary {
+  background: #0f568b;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+   font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url("web_design.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* statt center */
+  padding-left: 20%; /* schiebt Box nach links */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* BOX */
+.hero-box {
+  position: relative;
+  background: #DFE2E3;
+  padding: 40px;
+  max-width: 600px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.hero-box h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.hero-box p {
+  font-size: 18px;
+  color: #15171F;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 2%;
+}
+
+.btn-blue {
+  background: #0f568b;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-light {
+  background: #FBFCFD;
+  color: #111827;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* WICHTIG für sauberes Layout */
+.navbar > * {
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Button größer + NICHT ganz rechts kleben */
+.nav-right {
+  margin-left: 40px;
+}
+
+
+
+/*NEU BAR phone*/
+
+/* Burger Icon */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 20px 20px; /* kleiner auf Handy */
+  }
+
+  .nav-left {
+    font-size: 18px;
+  }
+  
+  .hero {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .hero-box {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .hero-box h1 {
+    font-size: 26px;
+  }
+
+  .nav-center {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-center a {
+    margin: 10px 0;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pricing {
+  padding: 120px 20%;
+}
+
+/* TOP */
+.pricing-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  gap: 60px;
+}
+
+.pricing-left h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tag {
+  font-size: 12px;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pricing-right {
+  max-width: 400px;
+}
+
+.pricing-right p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.pricing-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-outline {
+  border: 1px solid #9ca3af;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #111827;
+  font-size: 14px;
+}
+
+/* STATS */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  flex: 1;
+  padding: 0 30px;
+  position: relative;
+}
+
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #9ca3af;
+}
+
+.stat h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stat span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #374151;
+  max-width: 180px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pricing-top {
+    flex-direction: column;
+  }
+
+  .pricing-left h2 {
+    font-size: 28px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stat::after {
+    display: none;
+  }
+}
