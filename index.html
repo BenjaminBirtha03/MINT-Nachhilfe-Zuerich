@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINT Nachhilfe Zürich</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -17,13 +18,13 @@
     <nav class="nav-center" id="navMenu">
         <a href="#">Startseite</a>
         <a href="#">Über uns</a>
-        <a href="#">Fächer</a>
-        <a href="#">Preise</a>
-        <a href="#">Kontakt</a>
+        <a href="#price">Fächer</a>
+        <a href="#price">Preise</a>
+        <a href="#kontakt">Kontakt</a>
     </nav>
 
     <div class="nav-right">
-        <a href="#" class="btn-primary">Kostenlose Lektion buchen</a>
+        <a href="#kontakt" class="btn-primary">Probestunde nur 25 CHF</a>
     </div>
 </header>
 
@@ -36,25 +37,26 @@
         <p>
             Mathe, Physik und Informatik für Gymnasium und Matura.
             Zuverlässig, klar erklärt, 44 CHF pro Stunde.
+            <br><strong>Probestunde nur 25 CHF.</strong>
         </p>
 
         <div class="buttons">
-            <a href="#" class="btn-blue">Erste Lektion buchen</a>
-            <a href="#" class="btn-light">Fächer ansehen</a>
+            <a href="#kontakt" class="btn-blue">Erste Lektion buchen</a>
+            <a href="#price" class="btn-light">Fächer ansehen</a>
         </div>
     </div>
 </section>
 
 
 <!-- NEW AFTER HERO -->
-<section class="pricing">
+<section id="price" class="pricing">
 
   <div class="pricing-top">
 
     <div class="pricing-left">
       <span class="tag">— Transparente Preise</span>
       <h2>
-        Professionelle Nachhilfe<br>
+        Kompetente Nachhilfe<br>
         zu fairen Preisen
       </h2>
     </div>
@@ -63,11 +65,11 @@
       <p>
         44 CHF pro Stunde mit vergünstigter Probestunde.
         Kein Verstecktes, keine langen Verträge.
-        Nur qualifizierte ETH Tutoren und echte Ergebnisse.
+        Nur Erfahrene ETH Studierende und echte Ergebnisse.
       </p>
 
       <div class="pricing-buttons">
-        <a href="#" class="btn-light">Kostenlose Probestunde buchen</a>
+        <a href="#kontakt" class="btn-light">Probestunde nur 25 CHF</a>
         <a href="#" class="btn-outline">Alle Angebote ansehen</a>
       </div>
     </div>
@@ -80,7 +82,7 @@
     <div class="stat">
       <h3>44</h3>
       <span>CHF pro Stunde</span>
-      <p>Faire Preise für professionelle Nachhilfe.</p>
+      <p>Faire Preise für kompetente Nachhilfe.</p>
     </div>
 
     <div class="stat">
@@ -93,12 +95,13 @@
       <h3>3</h3>
       <span>Fächer verfügbar</span>
       <p>Mathematik, Physik und Informatik.</p>
+      <p>Weitere Fächer auf Anfrage möglich.</p>
     </div>
 
     <div class="stat">
       <h3>∞</h3>
       <span>Keine Bindung</span>
-      <p>Flexible Termine ohne Verpflichtung.</p>
+      <p>Flexible Termine ohne langfristige Verpflichtung.</p>
     </div>
 
   </div>
@@ -107,7 +110,119 @@
 
 
 
+
+
+
+<section id="kontakt" class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <p class="contact-small">— Kontaktieren Sie uns</p>
+
+      <h2>
+        Termin vereinbaren<br>
+        oder Fragen stellen
+      </h2>
+
+      <p>
+        Online oder bei Ihnen vor Ort in Zürich.<br>
+        Auf Wunsch auch an einem geeigneten Lernort.
+      </p>
+
+      <p class="contact-text">
+        Füllen Sie das Formular aus oder schreiben Sie uns direkt über WhatsApp.
+        Wir melden uns schnell zurück und finden den passenden Unterricht für Sie.
+      </p>
+
+      <p>📧 email@test.com</p>
+      <p> <i class="fa-brands fa-whatsapp"></i> +12 345678900</p>
+      <p>📍 Zürich, Schweiz</p>
+    </div>
+
+    <!-- RIGHT --> <!-- DEACTIVATED ON FORM SPREE!!!!!!!!!!! -->
+    <form action="https://formspree.io/f/xnjoeqoz" method="POST" class="contact-form">
+
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="E-Mail" required>
+      <input type="text" name="phone" placeholder="Telefon">
+
+      <!--<select name="subject">
+        <option>Worum geht es hauptsächlich?</option>
+        <option>Mathe</option>
+        <option>Physik</option>
+        <option>Informatik</option>
+      </select> -->
+
+      <textarea name="message" placeholder="Nachricht"></textarea>
+
+      <!-- Honeypot -->
+      <input type="text" name="website" style="display:none">
+
+      <button type="submit">Nachricht senden</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h3>MINT Nachhilfe Zürich</h3>
+
+      <p class="footer-title">Address:</p>
+      <p>Zürich, Schweiz</p>
+
+      <p class="footer-title">Contact:</p>
+      <p>Email: email@test.com</p>
+      <p>Telefon: +12345678900</p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <a href="#">Startseite</a>
+      <a href="#">Über uns</a>
+      <a href="#">Fächer</a>
+      <a href="#">Preise</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 MINT Nachhilfe Zürich. Alle Rechte vorbehalten.</p>
+
+    <div class="footer-links">
+      <a href="#">Datenschutz</a>
+      <a href="#">Impressum</a>
+      <a href="#">AGB</a>
+    </div>
+  </div>
+
+</footer>
+
 </body>
+
+
+
 <script>
     function toggleMenu() {
       document.getElementById("navMenu").classList.toggle("active");
