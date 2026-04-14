@@ -16,7 +16,8 @@ body {
   justify-content: space-between;
   align-items: center;
   /*padding: 24px 80px;*/
-  padding: 30px 20%;
+  padding: 1% 20%;
+  /*padding: 30px 20%;*/  /*14.04 changed*/
   /*background: #DFE2E3;*/
   background: rgba(255, 255, 255, 0.4); /* 70% weiß */
   backdrop-filter: blur(5px); /* optional, sieht modern aus */
@@ -310,11 +311,28 @@ body {
 
   .stats-container {
     flex-direction: column;
-    gap: 40px;
+    gap: 0;
   }
 
   .stat::after {
     display: none;
+  }
+
+
+
+  .stat {
+    border-top: 1px solid #9ca3af;
+    padding: 25px 0;
+  }
+
+  .stat:first-child {
+    border-top: none;
+  }
+
+  .stat h3,
+  .stat span,
+  .stat p {
+    margin: 6px 0;
   }
 }
 
