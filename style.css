@@ -19,10 +19,10 @@ body {
   padding: 1% 20%;
   /*padding: 30px 20%;*/  /*14.04 changed*/
   /*background: #DFE2E3;*/
-  background: rgba(255, 255, 255, 0.4); /* 70% weiß */
+  background: rgba(223, 226, 227, 0.4); /* 70% weiß */
   backdrop-filter: blur(5px); /* optional, sieht modern aus */
 
-  border-bottom: 1px solid #e5e7eb;
+  /*border-bottom: 1px solid #e5e7eb;*/
   position: absolute;/*sticky;*/
   top: 0;
   z-index: 1000;
@@ -489,4 +489,15 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+
+
+.legal-page {
+  margin-top: 120px;
+}
+
+.legal-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
